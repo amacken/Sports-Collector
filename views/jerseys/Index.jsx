@@ -1,10 +1,11 @@
 const React = require('react');
+const Default = require('../components/Default')
 
 class Index extends React.Component {
     render() {
         const { jerseys } = this.props;
         return (
-            <div>
+            <Default>
                 <h1>My Jersey Collection</h1>
                 <nav>
                     <a href="/jerseys/new">Enter A New Jersey To Your Collection</a>
@@ -28,7 +29,7 @@ class Index extends React.Component {
                         })
                     }
                 </ul>
-            </div>
+            </Default>
         )
     }
 }

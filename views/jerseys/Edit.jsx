@@ -1,10 +1,11 @@
 const React = require('react');
+const Default = require('../components/Default')
 
 class Edit extends React.Component {
     render() {
         const { _id, name, team, number, hallOfFamer, purchasePrice } = this.props.jersey;
         return (
-            <div>
+            <Default>
                 <h1>Edit Page</h1>
                 <form action={`/jerseys/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
@@ -15,7 +16,7 @@ class Edit extends React.Component {
                     <br/>
                     <input type="submit" name="" value="Submit Changes"/>
                 </form>
-            </div>
+            </Default>
         )
     }
 }
