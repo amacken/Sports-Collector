@@ -13,6 +13,9 @@ router.get('/', (req, res) => {
 });
 
 // New
+router.get('/new', (req, res) => {
+    res.render('jerseys/New')
+});
 
 // Delete
 
