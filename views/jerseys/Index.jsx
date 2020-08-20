@@ -5,7 +5,7 @@ class Index extends React.Component {
         const { jerseys } = this.props;
         return (
             <div>
-                <h1>Jerseys</h1>
+                <h1>My Jersey Collection</h1>
                 <nav>
                     <a href="/jerseys/new">Enter A New Jersey To Your Collection</a>
                 </nav>

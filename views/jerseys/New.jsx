@@ -1,5 +1,4 @@
 const React = require('react');
-const Default = require('../components/Default')
 
 class New extends React.Component {
     render() {

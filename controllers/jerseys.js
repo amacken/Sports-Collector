@@ -31,6 +31,13 @@ router.post('/', (req, res) => {
 // Edit
 
 // Show
+router.get('/:id', (req, res) => {
+    Jersey.findById(req.params.id, (error, foundJersey) => {
+        res.render('jerseys/Show', {
+            jersey: foundJersey
+        });
+    });
+});
 
 // Export router
 module.exports = router;
