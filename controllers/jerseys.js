@@ -27,6 +27,7 @@ router.delete('/:id', (req, res) => {
 // Update
 router.put('/:id', (req, res) => {
     req.body.hallOfFamer = req.body.hallOfFamer === "on" ? true : false;
+    req.body.isFramed = req.body.isFramed === "on" ? true : false;
     Jersey.findByIdAndUpdate(req.params.id, req.body, { new: true }, (error, updatedModel) => {
         res.redirect('/jerseys');
     });
