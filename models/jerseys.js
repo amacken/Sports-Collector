@@ -7,7 +7,9 @@ const jerseySchema = new Schema({
     team: { type: String, required: true },
     number: {type: Number, required: true},
     purchasePrice: {type: Number, required: true},
-    hallOfFamer: {type: Boolean, required: true}
+    hallOfFamer: {type: Boolean, required: true},
+    isFramed: {type: Boolean, required: true},
+    certificationNumber: {type: String, required: true}
 });
 
 // Create Model from our Schema

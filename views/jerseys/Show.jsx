@@ -3,7 +3,7 @@ const Default = require('../components/Default')
 
 class Show extends React.Component {
     render() {
-        const { name, team, number, hallOfFamer, purchasePrice } = this.props.jersey;
+        const { name, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.jersey;
         return (
             <Default>
                 <h1>{name} Jersey Page</h1>
@@ -12,6 +12,8 @@ class Show extends React.Component {
                 <p>Number: {number}</p>
                 <p>Inducted into the Hall Of Fame: {hallOfFamer ? `Yes` : `No`}</p>
                 <p>Purchase Price: ${purchasePrice}</p>
+                <p>Jersey is framed: {isFramed ? `Yes` : `No`}</p>
+                <p>Certification number: {certificationNumber}</p>
                 <a href={'/jerseys'}>Back to the Jerseys Collection Page</a>
             </Default>
         )

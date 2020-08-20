@@ -12,6 +12,8 @@ class New extends React.Component {
                   Number: <input type="number" name="number" /><br/>
                   Hall of Famer: <input type="checkbox" name="hallOfFamer" /><br/>
                   Purchase Price: <input type="number" name="purchasePrice" /><br/>
+                  Jersey is framed: <input type="checkbox" name="isFramed" /><br/>
+                  Certification Number: <input type="text" name="certificationNumber" /><br/>
                   <input type="submit" name="" value="Create Jersey Entry"/>
                </form>
           </Default>);

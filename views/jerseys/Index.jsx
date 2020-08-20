@@ -18,6 +18,7 @@ class Index extends React.Component {
                                     <a href={`/jerseys/${jersey._id}`}>{jersey.name}</a><br/>
                                     <p>Team: {jersey.team}</p>
                                     <p>Hall of Famer: {jersey.hallOfFamer ? `Yes` : `No`}</p>
+                                    <p>Item is framed: {jersey.isFramed ? `Yes` : `No`}</p>
                                     <a href={`/jerseys/${jersey._id}/edit`}>Edit</a><br/>
                                     <br/>
                                     <form action={`/jerseys/${jersey._id}?_method=DELETE`} method="POST">

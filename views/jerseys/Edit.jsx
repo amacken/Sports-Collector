@@ -3,7 +3,7 @@ const Default = require('../components/Default')
 
 class Edit extends React.Component {
     render() {
-        const { _id, name, team, number, hallOfFamer, purchasePrice } = this.props.jersey;
+        const { _id, name, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.jersey;
         return (
             <Default>
                 <h1>Edit Page</h1>
@@ -13,6 +13,8 @@ class Edit extends React.Component {
                     Number: <input type="number" name="number" defaultValue={number} /><br/>
                     Hall of Famer: <input type="checkbox" name="hallOfFamer" checked={hallOfFamer} /><br/>
                     Purchase Price: <input type="number" name="purchasePrice" defaultValue={purchasePrice} /><br/>
+                    Framed: <input type="checkbox" name="isFramed" checked={isFramed} /><br/>
+                    Certification Number: <input type="text" name="certificationNumber" defaultValue={certificationNumber} /><br/>
                     <br/>
                     <input type="submit" name="" value="Submit Changes"/>
                 </form>

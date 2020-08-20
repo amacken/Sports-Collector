@@ -39,6 +39,11 @@ router.post('/', (req, res) => {
     } else {
         req.body.hallOfFamer = false;
     }
+    if (req.body.isFramed === "on") {
+        req.body.isFramed = true;
+    } else {
+        req.body.isFramed = false;
+    }
     Jersey.create(req.body, (error, createdJersey) => {
         res.redirect('/jerseys');
     });
