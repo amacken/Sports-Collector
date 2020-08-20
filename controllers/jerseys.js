@@ -20,6 +20,12 @@ router.get('/new', (req, res) => {
 // Delete
 
 // Update
+router.put('/:id', (req, res) => {
+    req.body.hallOfFamer = req.body.hallOfFamer === "on" ? true : false;
+    Jersey.findByIdAndUpdate(req.params.id, req.body, { new: true }, (error, updatedModel) => {
+        res.redirect('/jerseys');
+    });
+});
 
 // Create
 router.post('/', (req, res) => {
@@ -34,6 +40,13 @@ router.post('/', (req, res) => {
 });
 
 // Edit
+router.get('/:id/edit', (req, res) => {
+    Jersey.findById(req.params.id, (error, foundJersey) => {
+        res.render('jerseys/Edit', {
+            jersey: foundJersey
+        });
+    });
+});
 
 // Show
 router.get('/:id', (req, res) => {
