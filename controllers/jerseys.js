@@ -22,6 +22,11 @@ router.get('/new', (req, res) => {
 // Update
 
 // Create
+router.post('/', (req, res) => {
+    Jersey.create(req.body, (error, createdJersey) => {
+        res.redirect('/jerseys');
+    });
+});
 
 // Edit
 

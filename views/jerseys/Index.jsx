@@ -9,6 +9,18 @@ class Index extends React.Component {
                 <nav>
                     <a href="/jerseys/new">Enter A New Jersey To Your Collection</a>
                 </nav>
+                <ul>
+                    {
+                        jerseys.map((jersey, index) => {
+                            return (
+                                <li>
+                                    <a href={`/jerseys/${jersey._id}`}>{jersey.name}</a><br/>
+                                    <p>Team: {jersey.team}</p><br/>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
             </div>
         )
     }
