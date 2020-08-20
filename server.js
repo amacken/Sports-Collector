@@ -25,6 +25,10 @@ mongoose.connection.once('open', () => {
 const jerseysController = require('./controllers/jerseys.js');
 app.use('/jerseys', jerseysController);
 
+app.get('/', (req, res) => {
+    res.redirect('/jerseys');
+});
+
 // Listen
 app.listen(PORT, () => {
     console.log('listening on: ' + PORT);
