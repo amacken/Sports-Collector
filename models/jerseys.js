@@ -6,7 +6,8 @@ const jerseySchema = new Schema({
     name: { type: String, required: true },
     team: { type: String, required: true },
     number: {type: Number, required: true},
-    purchasePrice: {type: Number, required: true}
+    purchasePrice: {type: Number, required: true},
+    hallOfFamer: {type: Boolean, required: true}
 });
 
 // Create Model from our Schema

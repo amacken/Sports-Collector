@@ -23,6 +23,11 @@ router.get('/new', (req, res) => {
 
 // Create
 router.post('/', (req, res) => {
+    if (req.body.hallOfFamer === "on") {
+        req.body.hallOfFamer = true;
+    } else {
+        req.body.hallOfFamer = false;
+    }
     Jersey.create(req.body, (error, createdJersey) => {
         res.redirect('/jerseys');
     });
