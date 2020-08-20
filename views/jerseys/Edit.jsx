@@ -9,7 +9,7 @@ class Edit extends React.Component {
                 <h1>Edit Page</h1>
                 <form action={`/jerseys/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
-                    Image: <input type="text" src="" name="img" defaultValue={img} /><br/>
+                    Image: <input type="text" name="img" defaultValue={img} /><br/>
                     Team: <input type="text" name="team" defaultValue={team} /><br/>
                     Number: <input type="number" name="number" defaultValue={number} /><br/>
                     Hall of Famer: <input type="checkbox" name="hallOfFamer" checked={hallOfFamer} /><br/>

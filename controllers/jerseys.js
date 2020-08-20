@@ -46,7 +46,11 @@ router.post('/', (req, res) => {
         req.body.isFramed = false;
     }
     Jersey.create(req.body, (error, createdJersey) => {
-        res.redirect('/jerseys');
+        if (error) {
+            console.log('error', error)
+        } else {
+            res.redirect('/jerseys');
+        }
     });
 });
 
