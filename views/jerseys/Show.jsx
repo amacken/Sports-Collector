@@ -3,10 +3,11 @@ const Default = require('../components/Default')
 
 class Show extends React.Component {
     render() {
-        const { name, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.jersey;
+        const { name, img, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.jersey;
         return (
             <Default>
                 <h1>{name} Jersey Page</h1>
+                <img src={img}></img>
                 <p>Name: {name}</p>
                 <p>Team: {team}</p>
                 <p>Number: {number}</p>

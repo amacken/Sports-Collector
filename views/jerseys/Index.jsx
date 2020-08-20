@@ -17,6 +17,7 @@ class Index extends React.Component {
                                 <li>
                                     <a href={`/jerseys/${jersey._id}`}>{jersey.name}</a><br/>
                                     <p>Team: {jersey.team}</p>
+                                    <img src={jersey.img}></img>
                                     <p>Hall of Famer: {jersey.hallOfFamer ? `Yes` : `No`}</p>
                                     <p>Item is framed: {jersey.isFramed ? `Yes` : `No`}</p>
                                     <a href={`/jerseys/${jersey._id}/edit`}>Edit</a><br/>

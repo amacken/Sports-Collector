@@ -9,7 +9,8 @@ const jerseySchema = new Schema({
     purchasePrice: {type: Number, required: true},
     hallOfFamer: {type: Boolean, required: true},
     isFramed: {type: Boolean, required: true},
-    certificationNumber: {type: String, required: true}
+    certificationNumber: {type: String, required: true},
+    img: {type: String, required: true} 
 });
 
 // Create Model from our Schema
