@@ -14,6 +14,21 @@ class Index extends React.Component {
                     <a href={'/balls'}>Go To Your Balls Collection</a>
                     <a href={'/pictures'}>Go To Your Pictures Collection</a>
                 </nav>
+                <ul>
+                    {
+                        bobbleheads.map((bobblehead, index) => {
+                            return (
+                                <li>
+                                    <a href={`/bobbleheads/${bobblehead._id}`}>{bobblehead.name}</a><br/>
+                                    <p>Sport: {bobblehead.sport}</p>
+                                    <p>Team: {bobblehead.team}</p>
+                                    <img src={bobblehead.img}></img>
+                                    <p>Hall of Famer: {bobblehead.hallOfFamer ? `Yes` : `No`}</p>
+                                </li>
+                            )
+                        })
+                    }
+                </ul> 
             </Default>
         )
     }
