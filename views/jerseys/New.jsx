@@ -8,6 +8,7 @@ class New extends React.Component {
               <h1>New Jersey Page</h1>
               <form action="/jerseys" method="POST">
                   Name: <input type="text" name="name" /><br/>
+                  Sport: <input type="text" name="sport" /><br/>
                   Team: <input type="text" name="team" /><br/>
                   Image: <input type="text" name="img" /><br/>
                   Number: <input type="number" name="number" /><br/>

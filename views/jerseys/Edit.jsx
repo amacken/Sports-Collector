@@ -3,13 +3,14 @@ const Default = require('../components/Default')
 
 class Edit extends React.Component {
     render() {
-        const { _id, name, img, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.jersey;
+        const { _id, name, img, sport, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.jersey;
         return (
             <Default>
                 <h1>Edit Page</h1>
                 <form action={`/jerseys/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
                     Image: <input type="text" name="img" defaultValue={img} /><br/>
+                    Sport: <input type="text" name="sport" defaultValue={sport} /><br/>
                     Team: <input type="text" name="team" defaultValue={team} /><br/>
                     Number: <input type="number" name="number" defaultValue={number} /><br/>
                     Hall of Famer: <input type="checkbox" name="hallOfFamer" checked={hallOfFamer} /><br/>

@@ -9,6 +9,7 @@ class New extends React.Component {
               <form action="/balls" method="POST">
                   Name: <input type="text" name="name" /><br/>
                   Image: <input type="text" name="img" /><br/>
+                  Sport: <input type="text" name="sport" /><br/>
                   Hall of Famer: <input type="checkbox" name="hallOfFamer" /><br/>
                   Purchase Price: <input type="number" name="purchasePrice" /><br/>
                   Certification Number: <input type="text" name="certificationNumber" /><br/>

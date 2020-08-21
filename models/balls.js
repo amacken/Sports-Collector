@@ -4,9 +4,10 @@ const Schema = mongoose.Schema;
 // Create Schema
 const ballSchema = new Schema({
     name: { type: String, required: true },
-    purchasePrice: {type: Number, required: true},
+    sport: { type: String, required: true },
+    purchasePrice: {type: Number, required: false},
     hallOfFamer: {type: Boolean, required: true},
-    certificationNumber: {type: String, required: true},
+    certificationNumber: {type: String, required: false},
     img: {type: String, required: false } 
 });
 
