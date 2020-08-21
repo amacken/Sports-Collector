@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 // Create Schema
 const pictureSchema = new Schema({
     name: { type: String, required: true },
+    sport: { type: String, required: true },
     team: { type: String, required: true },
     number: {type: Number, required: false},
     purchasePrice: {type: Number, required: false},
