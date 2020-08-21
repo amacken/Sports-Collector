@@ -18,6 +18,11 @@ router.get('/new', (req, res) => {
 });
 
 // Delete
+router.delete('/:id', (req, res) => {
+    Bobblehead.findByIdAndRemove(req.params.id, (error, bobblehead) => {
+        res.redirect('/bobbleheads');
+    });
+});
 
 // Update
 router.put('/:id', (req, res) => {

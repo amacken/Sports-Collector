@@ -26,6 +26,10 @@ class Index extends React.Component {
                                     <p>Hall of Famer: {bobblehead.hallOfFamer ? `Yes` : `No`}</p>
                                     <a href={`/bobbleheads/${bobblehead._id}/edit`}>Edit</a><br/>
                                     <br/>
+                                    <form action={`/bobbleheads/${bobblehead._id}?_method=DELETE`} method="POST">
+                                        <input type="submit" value="DELETE"/>
+                                    </form>
+                                    <br/>
                                 </li>
                             )
                         })
