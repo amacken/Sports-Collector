@@ -22,15 +22,16 @@ mongoose.connection.once('open', () => {
 });
 
 // Controller
+const homeController = require('./controllers/home.js');
+app.use('/', homeController);
+
 const jerseysController = require('./controllers/jerseys.js');
 app.use('/jerseys', jerseysController);
 
 const ballsController = require('./controllers/balls.js');
 app.use('/balls', ballsController);
 
-app.get('/', (req, res) => {
-    res.redirect('/jerseys');
-});
+
 
 // Listen
 app.listen(PORT, () => {
