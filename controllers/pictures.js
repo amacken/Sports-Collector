@@ -44,6 +44,13 @@ router.post('/', (req, res) => {
 });
 
 // Edit
+router.get('/:id/edit', (req, res) => {
+    Picture.findById(req.params.id, (error, foundPicture) => {
+        res.render('pictures/Edit', {
+            picture: foundPicture
+        });
+    });
+});
 
 // Show
 router.get('/:id', (req, res) => {
