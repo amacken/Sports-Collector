@@ -5,10 +5,10 @@ const Schema = mongoose.Schema;
 const pictureSchema = new Schema({
     name: { type: String, required: true },
     team: { type: String, required: true },
-    number: {type: Number, required: true},
-    purchasePrice: {type: Number, required: true},
+    number: {type: Number, required: false},
+    purchasePrice: {type: Number, required: false},
     hallOfFamer: {type: Boolean, required: true},
-    certificationNumber: {type: String, required: true},
+    certificationNumber: {type: String, required: false},
     img: {type: String, required: false } 
 });
 

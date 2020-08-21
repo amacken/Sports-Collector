@@ -18,6 +18,11 @@ router.get('/new', (req, res) => {
 });
 
 // Delete
+router.delete('/:id', (req, res) => {
+    Picture.findByIdAndRemove(req.params.id, (error, picture) => {
+        res.redirect('/pictures');
+    });
+});
 
 // Update
 router.put('/:id', (req, res) => {
