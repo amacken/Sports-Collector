@@ -20,6 +20,12 @@ router.get('/new', (req, res) => {
 // Delete
 
 // Update
+router.put('/:id', (req, res) => {
+    req.body.hallOfFamer = req.body.hallOfFamer === "on" ? true : false;
+    Picture.findByIdAndUpdate(req.params.id, req.body, { new: true }, (error, updatedModel) => {
+        res.redirect('/pictures');
+    });
+});
 
 // Create
 router.post('/', (req, res) => {
@@ -40,6 +46,13 @@ router.post('/', (req, res) => {
 // Edit
 
 // Show
+router.get('/:id', (req, res) => {
+    Picture.findById(req.params.id, (error, foundPicture) => {
+        res.render('pictures/Show', {
+            picture: foundPicture
+        });
+    });
+});
 
 
 // Export router
