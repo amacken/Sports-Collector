@@ -44,6 +44,13 @@ router.post('/', (req, res) => {
 });
 
 // Edit
+router.get('/:id/edit', (req, res) => {
+    Bobblehead.findById(req.params.id, (error, foundBobblehead) => {
+        res.render('bobbleheads/Edit', {
+            bobblehead: foundBobblehead
+        });
+    });
+});
 
 // Show
 router.get('/:id', (req, res) => {
