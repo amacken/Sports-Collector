@@ -18,6 +18,8 @@ class Index extends React.Component {
                                     <a href={`/balls/${ball._id}`}>{ball.name}</a><br/>
                                     <img src={ball.img}></img>
                                     <p>Hall of Famer: {ball.hallOfFamer ? `Yes` : `No`}</p>
+                                    <a href={`/balls/${ball._id}/edit`}>Edit</a><br/>
+                                    <br/>
                                 </li>
                             )
                         })

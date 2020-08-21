@@ -44,6 +44,13 @@ router.post('/', (req, res) => {
 });
 
 // Edit
+router.get('/:id/edit', (req, res) => {
+    Ball.findById(req.params.id, (error, foundBall) => {
+        res.render('balls/Edit', {
+            ball: foundBall
+        });
+    });
+});
 
 // Show
 router.get('/:id', (req, res) => {
