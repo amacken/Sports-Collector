@@ -8,7 +8,6 @@ const pictureSchema = new Schema({
     number: {type: Number, required: true},
     purchasePrice: {type: Number, required: true},
     hallOfFamer: {type: Boolean, required: true},
-    isFramed: {type: Boolean, required: true},
     certificationNumber: {type: String, required: true},
     img: {type: String, required: false } 
 });
