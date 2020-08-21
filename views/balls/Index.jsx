@@ -20,6 +20,10 @@ class Index extends React.Component {
                                     <p>Hall of Famer: {ball.hallOfFamer ? `Yes` : `No`}</p>
                                     <a href={`/balls/${ball._id}/edit`}>Edit</a><br/>
                                     <br/>
+                                    <form action={`/balls/${ball._id}?_method=DELETE`} method="POST">
+                                        <input type="submit" value="DELETE"/>
+                                    </form>
+                                    <br/>
                                 </li>
                             )
                         })
