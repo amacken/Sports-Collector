@@ -46,6 +46,13 @@ router.post('/', (req, res) => {
 // Edit
 
 // Show
+router.get('/:id', (req, res) => {
+    Bobblehead.findById(req.params.id, (error, foundBobblehead) => {
+        res.render('bobbleheads/Show', {
+            bobblehead: foundBobblehead
+        });
+    });
+});
 
 
 // Export router
