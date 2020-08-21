@@ -9,6 +9,7 @@ class Index extends React.Component {
                 <h1>My Jersey Collection</h1>
                 <nav>
                     <a href="/jerseys/new">Enter A New Jersey To Your Collection</a>
+                    <a href={'/balls'}>Go to Your Balls Collection</a>
                 </nav>
                 <ul>
                     {
