@@ -34,6 +34,9 @@ app.use('/balls', ballsController);
 const picturesController = require('./controllers/pictures.js');
 app.use('/pictures', picturesController);
 
+const bobbleheadsController = require('./controllers/bobbleheads.js');
+app.use('/bobbleheads', bobbleheadsController);
+
 
 
 // Listen
