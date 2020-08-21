@@ -13,12 +13,29 @@ router.get('/', (req, res) => {
 });
 
 // New
+router.get('/new', (req, res) => {
+    res.render('pictures/New')
+});
 
 // Delete
 
 // Update
 
 // Create
+router.post('/', (req, res) => {
+    if (req.body.hallOfFamer === "on") {
+        req.body.hallOfFamer = true;
+    } else {
+        req.body.hallOfFamer = false;
+    }
+    Picture.create(req.body, (error, createdPicture) => {
+        if (error) {
+            console.log('error', error)
+        } else {
+            res.redirect('/pictures');
+        }
+    });
+});
 
 // Edit
 
