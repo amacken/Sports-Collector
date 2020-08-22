@@ -8,7 +8,7 @@ class Index extends React.Component {
             <Default>
                 <h1>My Miscellaneous Items Collection</h1>
                 <nav>
-                    <a href="/jerseys/new">Enter A New Item To Your Collection</a>
+                    <a href="/miscItems/new">Enter A New Item To Your Collection</a>
                     <a href={'/'}>Home</a>
                     <a href={'/jerseys'}>Jerseys</a>
                     <a href={'/balls'}>Balls</a>
