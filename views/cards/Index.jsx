@@ -25,6 +25,8 @@ class Index extends React.Component {
                                     <p>Team: {card.team}</p>
                                     <img src={card.img}></img>
                                     <p>Hall of Famer: {card.hallOfFamer ? `Yes` : `No`}</p>
+                                    <a href={`/cards/${card._id}/edit`}>Edit</a><br/>
+                                    <br/>
                                 </li>
                             )
                         })

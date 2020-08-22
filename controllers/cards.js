@@ -44,6 +44,13 @@ router.post('/', (req, res) => {
 });
 
 // Edit
+router.get('/:id/edit', (req, res) => {
+    Card.findById(req.params.id, (error, foundCard) => {
+        res.render('cards/Edit', {
+            card: foundCard
+        });
+    });
+});
 
 // Show
 router.get('/:id', (req, res) => {
