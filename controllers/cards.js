@@ -13,12 +13,35 @@ router.get('/', (req, res) => {
 });
 
 // New
+router.get('/new', (req, res) => {
+    res.render('cards/New')
+});
 
 // Delete
 
 // Update
+router.put('/:id', (req, res) => {
+    req.body.hallOfFamer = req.body.hallOfFamer === "on" ? true : false;
+    Card.findByIdAndUpdate(req.params.id, req.body, { new: true }, (error, updatedModel) => {
+        res.redirect('/cards');
+    });
+});
 
 // Create
+router.post('/', (req, res) => {
+    if (req.body.hallOfFamer === "on") {
+        req.body.hallOfFamer = true;
+    } else {
+        req.body.hallOfFamer = false;
+    }
+    Card.create(req.body, (error, createdCard) => {
+        if (error) {
+            console.log('error', error)
+        } else {
+            res.redirect('/cards');
+        }
+    });
+});
 
 // Edit
 
