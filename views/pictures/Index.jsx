@@ -10,9 +10,10 @@ class Index extends React.Component {
                 <nav>
                     <a href="/pictures/new">Enter A New Picture To Your Collection</a>
                     <a href={'/'}>Home</a>
-                    <a href={'/jerseys'}>Go To Your Jerseys Collection</a>
-                    <a href={'/balls'}>Go To Your Balls Collection</a>
-                    <a href={'/bobbleheads'}>Go To Your Bobbleheads Collection</a>
+                    <a href={'/jerseys'}>Jerseys</a>
+                    <a href={'/balls'}>Balls</a>
+                    <a href={'/bobbleheads'}>Bobbleheads</a>
+                    <a href={'/cards'}>Cards</a>
                 </nav>
                 <ul>
                     {
