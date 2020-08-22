@@ -50,6 +50,13 @@ router.post('/', (req, res) => {
 });
 
 // Edit
+router.get('/:id/edit', (req, res) => {
+    MiscItem.findById(req.params.id, (error, foundMiscItem) => {
+        res.render('miscItems/Edit', {
+            miscItem: foundMiscItem
+        });
+    });
+});
 
 // Show
 router.get('/:id', (req, res) => {

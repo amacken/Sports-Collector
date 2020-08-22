@@ -26,6 +26,8 @@ class Index extends React.Component {
                                     <img src={miscItem.img}></img>
                                     <p>Hall of Famer: {miscItem.hallOfFamer ? `Yes` : `No`}</p>
                                     <p>Item is framed: {miscItem.isFramed ? `Yes` : `No`}</p>
+                                    <a href={`/miscItems/${miscItem._id}/edit`}>Edit</a><br/>
+                                    <br/>
                                 </li>
                             )
                         })
