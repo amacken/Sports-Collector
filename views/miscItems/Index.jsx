@@ -28,6 +28,10 @@ class Index extends React.Component {
                                     <p>Item is framed: {miscItem.isFramed ? `Yes` : `No`}</p>
                                     <a href={`/miscItems/${miscItem._id}/edit`}>Edit</a><br/>
                                     <br/>
+                                    <form action={`/miscItems/${miscItem._id}?_method=DELETE`} method="POST">
+                                        <input type="submit" value="DELETE"/>
+                                    </form>
+                                    <br/>
                                 </li>
                             )
                         })

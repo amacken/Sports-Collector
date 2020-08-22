@@ -18,6 +18,11 @@ router.get('/new', (req, res) => {
 });
 
 // Delete
+router.delete('/:id', (req, res) => {
+    MiscItem.findByIdAndRemove(req.params.id, (error, miscItem) => {
+        res.redirect('/miscItems');
+    });
+});
 
 // Update
 router.put('/:id', (req, res) => {
