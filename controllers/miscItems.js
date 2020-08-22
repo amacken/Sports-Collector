@@ -52,6 +52,13 @@ router.post('/', (req, res) => {
 // Edit
 
 // Show
+router.get('/:id', (req, res) => {
+    MiscItem.findById(req.params.id, (error, foundMiscItem) => {
+        res.render('miscItems/Show', {
+            miscItem: foundMiscItem
+        });
+    });
+});
 
 
 // Export router
