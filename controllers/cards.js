@@ -18,6 +18,11 @@ router.get('/new', (req, res) => {
 });
 
 // Delete
+router.delete('/:id', (req, res) => {
+    Card.findByIdAndRemove(req.params.id, (error, card) => {
+        res.redirect('/cards');
+    });
+});
 
 // Update
 router.put('/:id', (req, res) => {
