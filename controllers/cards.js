@@ -46,6 +46,13 @@ router.post('/', (req, res) => {
 // Edit
 
 // Show
+router.get('/:id', (req, res) => {
+    Card.findById(req.params.id, (error, foundCard) => {
+        res.render('cards/Show', {
+            card: foundCard
+        });
+    });
+});
 
 
 // Export router
