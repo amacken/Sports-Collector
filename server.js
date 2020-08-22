@@ -21,7 +21,7 @@ mongoose.connection.once('open', () => {
     console.log("connected to mongo");
 });
 
-// Controller
+// Controllers
 const homeController = require('./controllers/home.js');
 app.use('/', homeController);
 
@@ -36,6 +36,9 @@ app.use('/pictures', picturesController);
 
 const bobbleheadsController = require('./controllers/bobbleheads.js');
 app.use('/bobbleheads', bobbleheadsController);
+
+const cardsController = require('./controllers/cards.js');
+app.use('/cards', cardsController);
 
 
 
