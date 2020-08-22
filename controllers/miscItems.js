@@ -4,6 +4,13 @@ const MiscItem = require('../models/miscItems.js');
 
 // Add Routes
 // Index
+router.get('/', (req, res) => {
+    MiscItem.find({}, (error, allMiscItems) => {
+        res.render('miscItems/Index', {
+            miscItems: allMiscItems
+        });
+    })
+});
 
 // New
 

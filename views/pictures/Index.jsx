@@ -14,6 +14,7 @@ class Index extends React.Component {
                     <a href={'/balls'}>Balls</a>
                     <a href={'/bobbleheads'}>Bobbleheads</a>
                     <a href={'/cards'}>Cards</a>
+                    <a href={'/miscItems'}>Misc. Items</a>
                 </nav>
                 <ul>
                     {
