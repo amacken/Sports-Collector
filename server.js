@@ -40,6 +40,9 @@ app.use('/bobbleheads', bobbleheadsController);
 const cardsController = require('./controllers/cards.js');
 app.use('/cards', cardsController);
 
+const miscItemsController = require('./controllers/miscItems.js');
+app.use('/miscItems', miscItemsController);
+
 
 
 // Listen
