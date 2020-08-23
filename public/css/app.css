@@ -6,6 +6,8 @@ body {
 
 nav {
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -20,4 +22,18 @@ h1 {
 
 img {
     height: 150px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px 20px 20px;
+    margin: auto;
+    text-align: center;
+}
+
+li {
+    padding: 20px 10px;
+    list-style: none;
 }
