@@ -13,7 +13,7 @@ class Show extends React.Component {
                 <p>Inducted into the Hall Of Fame: {hallOfFamer ? `Yes` : `No`}</p>
                 <p>Purchase Price: ${purchasePrice}</p>
                 <p>Certification number: {certificationNumber}</p>
-                <a href={'/balls'}>Back to the Balls Collection Page</a>
+                <a href={'/balls'}>Back to the Ball Collection Page</a>
             </Default>
         )
     }

@@ -6,7 +6,7 @@ class Index extends React.Component {
         const { balls } = this.props;
         return (
             <Default>
-                <h1>My Balls Collection</h1>
+                <h1>My Ball Collection</h1>
                 <nav>
                     <a href="/balls/new">Enter A New Ball To Your Collection</a>
                     <a href={'/'}>Home</a>
