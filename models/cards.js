@@ -7,6 +7,7 @@ const cardSchema = new Schema({
     sport: { type: String, required: true},
     team: { type: String, required: true },
     number: {type: Number, required: true},
+    year: {type: String, required: true},
     purchasePrice: {type: Number, required: false},
     hallOfFamer: {type: Boolean, required: true},
     certificationNumber: {type: String, required: false},

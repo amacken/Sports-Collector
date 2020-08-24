@@ -12,6 +12,7 @@ class Show extends React.Component {
                 <p>Sport: {sport}</p>
                 <p>Team: {team}</p>
                 <p>Number: {number}</p>
+                <p>Year: {year}</p>
                 <p>Inducted into the Hall Of Fame: {hallOfFamer ? `Yes` : `No`}</p>
                 <p>Purchase Price: ${purchasePrice}</p>
                 <p>Certification number: {certificationNumber}</p>

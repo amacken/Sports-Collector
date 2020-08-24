@@ -12,6 +12,7 @@ class New extends React.Component {
                   Team: <input type="text" name="team" /><br/>
                   Image: <input type="text" name="img" /><br/>
                   Number: <input type="number" name="number" /><br/>
+                  Year: <input type="text" name="year" /><br/>
                   Hall of Famer: <input type="checkbox" name="hallOfFamer" /><br/>
                   Purchase Price: <input type="number" name="purchasePrice" /><br/>
                   Certification Number: <input type="text" name="certificationNumber" /><br/>
