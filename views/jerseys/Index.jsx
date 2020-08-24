@@ -25,6 +25,7 @@ class Index extends React.Component {
                                     <p>Sport: {jersey.sport}</p>
                                     <p>Team: {jersey.team}</p>
                                     <img src={jersey.img}></img>
+                                    <br/><br/>
                                     <a href={`/jerseys/${jersey._id}/edit`}>Edit</a><br/>
                                     <br/>
                                     <form action={`/jerseys/${jersey._id}?_method=DELETE`} method="POST">

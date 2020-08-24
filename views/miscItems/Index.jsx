@@ -24,6 +24,7 @@ class Index extends React.Component {
                                     <a href={`/miscItems/${miscItem._id}`}>{miscItem.name}</a><br/>
                                     <p>Sport: {miscItem.sport}</p>
                                     <img src={miscItem.img}></img>
+                                    <br/><br/>
                                     <a href={`/miscItems/${miscItem._id}/edit`}>Edit</a><br/>
                                     <br/>
                                     <form action={`/miscItems/${miscItem._id}?_method=DELETE`} method="POST">
