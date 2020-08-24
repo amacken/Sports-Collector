@@ -3,12 +3,13 @@ const Default = require('../components/Default')
 
 class Edit extends React.Component {
     render() {
-        const { _id, name, img, sport, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.miscItem;
+        const { _id, name, desciption, img, sport, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.miscItem;
         return (
             <Default>
                 <h1>Edit Page</h1>
                 <form action={`/miscItems/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
+                    Item Description: <input type="text" name="desciption" defaultValue={desciption} /><br/>
                     Image: <input type="text" name="img" defaultValue={img} /><br/>
                     Sport: <input type="text" name="sport" defaultValue={sport} /><br/>
                     Team: <input type="text" name="team" defaultValue={team} /><br/>

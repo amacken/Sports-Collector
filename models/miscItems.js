@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 // Create Schema
 const miscItemSchema = new Schema({
     name: { type: String, required: true },
+    description: { type: String, required: true},
     sport: { type: String, required: true},
     team: { type: String, required: false },
     number: {type: Number, required: false},
