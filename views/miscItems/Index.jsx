@@ -24,8 +24,6 @@ class Index extends React.Component {
                                     <a href={`/miscItems/${miscItem._id}`}>{miscItem.name}</a><br/>
                                     <p>Sport: {miscItem.sport}</p>
                                     <img src={miscItem.img}></img>
-                                    <p>Hall of Famer: {miscItem.hallOfFamer ? `Yes` : `No`}</p>
-                                    <p>Item is framed: {miscItem.isFramed ? `Yes` : `No`}</p>
                                     <a href={`/miscItems/${miscItem._id}/edit`}>Edit</a><br/>
                                     <br/>
                                     <form action={`/miscItems/${miscItem._id}?_method=DELETE`} method="POST">

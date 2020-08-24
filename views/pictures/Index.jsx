@@ -24,7 +24,6 @@ class Index extends React.Component {
                                     <a href={`/pictures/${picture._id}`}>{picture.name}</a><br/>
                                     <p>Team: {picture.team}</p>
                                     <img src={picture.img}></img>
-                                    <p>Hall of Famer: {picture.hallOfFamer ? `Yes` : `No`}</p>
                                     <a href={`/pictures/${picture._id}/edit`}>Edit</a><br/>
                                     <br/>
                                     <form action={`/pictures/${picture._id}?_method=DELETE`} method="POST">
