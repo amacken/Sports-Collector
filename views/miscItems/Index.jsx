@@ -6,7 +6,7 @@ class Index extends React.Component {
         const { miscItems } = this.props;
         return (
             <Default>
-                <h1>My Miscellaneous Items Collection</h1>
+                <h1>My Miscellaneous Item Collection</h1>
                 <nav>
                     <a href="/miscItems/new">Enter A New Item To Your Collection</a>
                     <a href={'/'}>Home</a>
