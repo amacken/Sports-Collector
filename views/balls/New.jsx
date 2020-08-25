@@ -5,7 +5,7 @@ class New extends React.Component {
     render() {
       return (
           <Default>
-              <h1>New Ball Page</h1>
+              <h1>New Ball Entry</h1>
               <form action="/balls" method="POST">
                   Name: <input type="text" name="name" /><br/>
                   Image: <input type="text" name="img" /><br/>

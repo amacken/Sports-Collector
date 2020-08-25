@@ -5,7 +5,7 @@ class New extends React.Component {
     render() {
       return (
           <Default>
-              <h1>New Item Page</h1>
+              <h1>New Item Entry</h1>
               <form action="/miscItems" method="POST">
                   Name: <input type="text" name="name" /><br/>
                   Item Description: <input type="textarea" name="description" /><br/>

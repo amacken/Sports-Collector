@@ -5,7 +5,7 @@ class New extends React.Component {
     render() {
       return (
           <Default>
-              <h1>New Card Page</h1>
+              <h1>New Card Entry</h1>
               <form action="/cards" method="POST">
                   Name: <input type="text" name="name" /><br/>
                   Sport: <input type="text" name="sport" /><br/>
