@@ -6,6 +6,7 @@ class Default extends React.Component {
             <html>
                 <head>
                     <link rel="stylesheet" href='/css/app.css'/>
+                    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"></link>
                     <title>Sports Collector</title>
                 </head>
                 <body>

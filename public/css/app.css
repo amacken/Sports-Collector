@@ -4,28 +4,39 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Lobster', cursive;
     padding: 10px;
+    color: lightyellow;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+body a {
+    color: yellow;
 }
 
 nav {
     padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
-    font-size: 1.3em;
-
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
 }
 
 nav a {
-    color: black;
+    color: seashell;
     padding: 0 15px 15px 0;
 
 }
 
 h1 {
+    font-family: 'Lobster', cursive;
     text-align: center;
-    font-size: 3em;
-    text-decoration: underline;
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(red, white, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 img {
@@ -44,4 +55,12 @@ ul {
 li {
     padding: 20px 10px;
     list-style: none;
+}
+
+[type="submit"] {
+    background-color: lightblue;
+}
+
+a [edit] {
+    color: red;
 }
