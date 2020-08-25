@@ -4,10 +4,9 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Lobster', cursive;
     padding: 10px;
-    color: lightyellow;
+    color: navy;
     font-size: 25px;
     letter-spacing: 1px;
 }
@@ -25,7 +24,7 @@ nav {
 }
 
 nav a {
-    color: seashell;
+    color: ivory;
     padding: 0 15px 15px 0;
 
 }
@@ -34,9 +33,7 @@ h1 {
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 2.5em;
-    background: -webkit-linear-gradient(red, white, blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: navy;
 }
 
 img {
@@ -58,9 +55,10 @@ li {
 }
 
 [type="submit"] {
-    background-color: lightblue;
+    background-color: red;
+    font-weight: bold;
 }
 
-a [edit] {
-    color: red;
+[type="textarea"] {
+    width: 300px;
 }

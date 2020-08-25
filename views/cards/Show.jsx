@@ -3,7 +3,7 @@ const Default = require('../components/Default')
 
 class Show extends React.Component {
     render() {
-        const { name, sport, img, team, number, hallOfFamer, purchasePrice, certificationNumber } = this.props.card;
+        const { name, sport, img, team, number, year, hallOfFamer, purchasePrice, certificationNumber } = this.props.card;
         return (
             <Default>
                 <h1>{name} Card Page</h1>

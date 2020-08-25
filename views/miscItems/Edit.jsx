@@ -9,7 +9,7 @@ class Edit extends React.Component {
                 <h1>Edit Page</h1>
                 <form action={`/miscItems/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
-                    Item Description: <input type="text" name="description" defaultValue={description} /><br/>
+                    Item Description: <input type="textarea" name="description" defaultValue={description} /><br/>
                     Image: <input type="text" name="img" defaultValue={img} /><br/>
                     Sport: <input type="text" name="sport" defaultValue={sport} /><br/>
                     Team: <input type="text" name="team" defaultValue={team} /><br/>
