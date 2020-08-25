@@ -6,7 +6,7 @@ class Edit extends React.Component {
         const { _id, name, sport, img, hallOfFamer, purchasePrice, certificationNumber } = this.props.ball;
         return (
             <Default>
-                <h1>Edit Page</h1>
+                <h1>Edit {name} Ball</h1>
                 <form action={`/balls/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
                     Image: <input type="text" name="img" defaultValue={img} /><br/>

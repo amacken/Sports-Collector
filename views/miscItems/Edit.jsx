@@ -6,7 +6,7 @@ class Edit extends React.Component {
         const { _id, name, description, img, sport, team, number, hallOfFamer, purchasePrice, isFramed, certificationNumber } = this.props.miscItem;
         return (
             <Default>
-                <h1>Edit Page</h1>
+                <h1>Edit {name} Item</h1>
                 <form action={`/miscItems/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
                     Item Description: <input type="textarea" name="description" defaultValue={description} /><br/>

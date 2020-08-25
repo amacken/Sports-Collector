@@ -6,7 +6,7 @@ class Edit extends React.Component {
         const { _id, name, img, sport, team, year, number, hallOfFamer, purchasePrice, certificationNumber } = this.props.card;
         return (
             <Default>
-                <h1>Edit Page</h1>
+                <h1>Edit {name} Card</h1>
                 <form action={`/cards/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
                     Image: <input type="text" name="img" defaultValue={img} /><br/>

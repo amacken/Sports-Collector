@@ -6,7 +6,7 @@ class Edit extends React.Component {
         const { _id, name, img, sport, team, number, hallOfFamer } = this.props.bobblehead;
         return (
             <Default>
-                <h1>Edit Page</h1>
+                <h1>Edit {name} Bobblehead</h1>
                 <form action={`/bobbleheads/${_id}?_method=PUT`} method="POST">
                     Name: <input type="text" name="name" defaultValue={name} /><br/>
                     Image: <input type="text" name="img" defaultValue={img} /><br/>
